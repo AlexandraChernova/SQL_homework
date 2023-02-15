@@ -12,13 +12,14 @@ public class LoginPage {
     private SelenideElement passwordField;
     @FindBy(css = "[data-test-id=action-login]")
     private SelenideElement loginButton;
-    @FindBy(css ="[data-test-id='error-notification']")
+    @FindBy(css = "[data-test-id='error-notification']")
     private SelenideElement errorNotification;
 
-    public void verifyErrorNotificationVisibility(){
+    public void verifyErrorNotificationVisibility() {
         errorNotification.shouldBe(Condition.visible);
     }
 
-    public VerificationPage validLogin(DataHelper.AuthInfo info);
-    loginField.setValue()
+    public VerificationPage validLogin(DataHelper.AuthInfo info) {
+        loginField.setValue();
+        }
 }
